@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600 italic">Ifti Noor</h1>
+            <div class="space-x-6">
+                <a href="#home" class="nav-link text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600">Skills</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home"
+        class="section mx-auto flex flex-col justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="text-center ">
+            <h1 class="text-5xl font-bold mt-6 mb-6 pt-8 animate__fadeIn">Work hard in silence,
+                <br>
+                let your success be your noise
+            </h1>
+            <p class="text-xl mb-6">I'm a passionate developer creating innovative solutions.</p>
+            <a href="#contact"
+                class="inline-block bg-white text-blue-600 px-6 py-3 mt-4 rounded-full font-semibold hover:bg-blue-100 transition">Get
+                in Touch</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl w-10/12 mx-auto mt-20">
+            <div class="card bg-blue-100">
+                <a href="#skills">
+                    <img src="assets/skill.png" alt="Skills Image" class="w-full h-full object-contain">
+                </a>
+            </div>
+            <div class="card middle bg-green-100">
+                <a href="#projects">
+                    <img src="assets/project.png" alt="Projects Image" class="w-full h-full object-contain">
+                </a>
+            </div>
+            <div class="card bg-indigo-100">
+                <a href="#contact">
+                    <img src="assets/contact.png" alt="Contact Image" class="w-full h-full object-contain">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-white">
+        <div class="container w-10/12 mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <img src="assets/skill.png" alt="Skills Illustration" class="rounded-lg shadow-lg mx-auto">
+                </div>
+                <div class="md:w-2/3 md:pl-8">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">Languages:</h3>
+                            <p class="text-gray-600">C++ | Python | JavaScript | Solidity</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">Frontend:</h3>
+                            <p class="text-gray-600">HTML | CSS | React</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">Data Science:</h3>
+                            <p class="text-gray-600">Pandas | Numpy | Matplotlib | Jupyter Notebooks</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-600">Proficient in:</h3>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li><span class="text-yellow-500">★</span> C++</li>
+                                <li><span class="text-yellow-500">★</span> Python</li>
+                                <li><span class="text-yellow-500">★</span> JavaScript</li>
+                                <li><span class="text-yellow-500">★</span> Algorithmic Problem Solving (solved 1000+
+                                    problems on various online platforms)</li>
+                                <li><span class="text-yellow-500">★</span> Data Structures and Algorithms</li>
+                                <li><span class="text-yellow-500">★</span> Competitive Programming</li>
+                                <li><span class="text-yellow-500">★</span> Frontend developer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="assets/BPL.png" alt="Project 1" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Project One</h3>
+                    <p class="text-gray-600">A React-based application where users can select and manage cricket players
+                        for a team</p>
+                    <a href="https://bpl-dream-sqd.netlify.app/"
+                        class="text-blue-600 hover:underline mt-2 inline-block">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/peddy.png" alt="Project 2" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                    <p class="text-gray-600">A pet adoption platform where users can browse and adopt pets.</p>
+                    <a href="https://ifti2021331087.github.io/Peddy-Website/index.html"
+                        class="text-blue-600 hover:underline mt-2 inline-block">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/dan.png" alt="Project 3" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+                    <p class="text-gray-600">A Responsive Donation Tracker with History & Balance Management</p>
+                    <a href="https://ifti2021331087.github.io/Assignment-05/index.html"
+                        class="text-blue-600 hover:underline mt-2 inline-block">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-gray-100"
+        style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); background-color: #f3f4f6;">
+        <div class="container w-10/12 mx-auto">
+            <h2 class="text-5xl font-bold mb-8 text-center">Education</h2>
+            <div class="space-y-6">
+                <div class="education-item">
+                    <img src="assets/sust-logo.png" alt="SUST Logo" class="rounded-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Shahjalal University of Science and Technology</h3>
+                        <p class="text-gray-600 text-xl">Bachelor of Science in Computer Science and Engineering</p>
+                        <p class="text-gray-600 text-xl">February 2021 - Present</p>
+                        <p class="text-gray-600 text-xl">Sylhet, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <img src="assets/ipsc-logo.png" alt="DRMC Logo" class="rounded-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold">ISPAHANI PUBLIC SCHOOL & COLLEGE, CUMILLA</h3>
+                        <p class="text-gray-600 text-xl">Higher Secondary</p>
+                        <p class="text-gray-600 text-xl">July 2017 - July 2019</p>
+                        <p class="text-gray-600 text-xl">Cumilla, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="partition bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-lg mb-4">Feel free to reach out to me via email or connect with me on social media.
+                    </p>
+                    <p class="text-lg mb-4">Email: <a href="mailto:your.email@example.com"
+                            class="text-blue-600 hover:underline">ishmamiftinoor3@gmail.com</a></p>
+                    <div class="flex space-x-4 justify-center">
+                        <a href="https://github.com/ifti2021331087" class="text-gray-600 hover:text-blue-600"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.facebook.com/ishmamiftinoor.noor/"
+                            class="text-gray-600 hover:text-blue-600"><i class="fab fa-twitter"></i>Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-linkedin"></i>
+                            LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
