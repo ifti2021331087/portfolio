@@ -6,10 +6,12 @@ body {
     min-height: 100vh;
     padding: 4rem 2rem;
 }
-.partition{
+
+.partition {
     min-height: 70vh;
     padding: 4rem 4rem;
 }
+
 .nav-link {
     position: relative;
 }
@@ -128,4 +130,9 @@ body {
 
 .connection-card:hover {
     transform: scale(1.1);
+}
+
+.footer-img {
+    width: 40px;
+    height: 40px;
 }
